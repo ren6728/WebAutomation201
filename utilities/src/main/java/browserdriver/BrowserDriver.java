@@ -36,11 +36,14 @@ import java.util.concurrent.TimeUnit;
 public class BrowserDriver {
 
     public static WebDriver driver = null;
-    public static String browserName = System.getProperty("browserName", "fireFox");
-    public static final String url = System.getProperty("url", "http://verizon.com/");
+    public static String browserName = System.getProperty("browserName", "chrome");
+    //http://automationpractice.com/ ;http://verizon.com/
+    public static final String url = System.getProperty("url", "http://the-internet.herokuapp.com/");
     public static String os = System.getProperty("os", "mac");
     public static String cloudPlatformName = System.getProperty("cloudPlatformName", "browserstack");
+    //renxingxing1; ren2020
     public static final String AUTOMATE_USERNAME = System.getProperty("AUTOMATE_USERNAME","renxingxing1");
+    //DyE5Dpu9u1W4WLaQT9yn ;b6806483-09d6-48ad-bd4e-1ee468d038ba
     public static final String AUTOMATE_ACCESS_KEY = System.getProperty("AUTOMATE_ACCESS_KEY", "DyE5Dpu9u1W4WLaQT9yn");
     public static String platform = System.getProperty("platform", "local");
 

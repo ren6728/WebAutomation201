@@ -11,6 +11,8 @@
     <modules>
         <module>automationverizon</module>
         <module>utilities</module>
+        <module>samplewebapp</module>
+        <module>automationpractice</module>
     </modules>
 
     <dependencyManagement>
@@ -31,6 +33,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20.1</version>
             </dependency>
+            <!--Dependency to read XLSX File-->
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
@@ -42,6 +45,7 @@
                 <artifactId>poi-ooxml</artifactId>
                 <version>3.17</version>
             </dependency>
+            <!--Extent Report-->
             <dependency>
                 <groupId>com.aventstack</groupId>
                 <artifactId>extentreports</artifactId>
@@ -53,39 +57,28 @@
                 <version>2.41.1</version>
             </dependency>
             <dependency>
-                <groupId>com.google.api-client</groupId>
-                <artifactId>google-api-client</artifactId>
-                <version>1.23.0</version>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>42.2.5</version>
             </dependency>
-            <dependency>
-                <groupId>com.google.oauth-client</groupId>
-                <artifactId>google-oauth-client-jetty</artifactId>
-                <version>1.23.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.apis</groupId>
-                <artifactId>google-api-services-sheets</artifactId>
-                <version>v4-rev498-1.23.0</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.api-client</groupId>
-                <artifactId>google-api-client</artifactId>
-                <version>1.23.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.oauth-client</groupId>
-                <artifactId>google-oauth-client-jetty</artifactId>
-                <version>1.23.0</version>
-            </dependency>
-            <dependency>
-                <groupId>com.google.apis</groupId>
-                <artifactId>google-api-services-sheets</artifactId>
-                <version>v4-rev498-1.23.0</version>
-            </dependency>
-
+            <!-- <dependency>
+                 <groupId>com.google.api-client</groupId>
+                 <artifactId>google-api-client</artifactId>
+                 <version>1.23.0</version>
+             </dependency>
+             <dependency>
+                 <groupId>com.google.oauth-client</groupId>
+                 <artifactId>google-oauth-client-jetty</artifactId>
+                 <version>1.23.0</version>
+             </dependency>
+             <dependency>
+                 <groupId>com.google.apis</groupId>
+                 <artifactId>google-api-services-sheets</artifactId>
+                 <version>v4-rev498-1.23.0</version>
+             </dependency>-->
         </dependencies>
     </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -107,5 +100,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
