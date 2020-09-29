@@ -37,8 +37,8 @@ public class BrowserDriver {
 
     public static WebDriver driver = null;
     public static String browserName = System.getProperty("browserName", "chrome");
-    //http://automationpractice.com/ ;http://verizon.com/
-    public static final String url = System.getProperty("url", "http://the-internet.herokuapp.com/");
+    //http://automationpractice.com/ ;http://verizon.com/  ; http://the-internet.herokuapp.com/
+    public static final String url = System.getProperty("url", "http://automationpractice.com/");
     public static String os = System.getProperty("os", "mac");
     public static String cloudPlatformName = System.getProperty("cloudPlatformName", "browserstack");
     //renxingxing1; ren2020
